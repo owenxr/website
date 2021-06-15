@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'LinedMid';
+    src: url('Fonts/Rajdhani-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'LinedStrong';
+    src: url('Fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('Fonts/Poppins-Light.ttf');
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px dashed gray;
+    overflow: hidden;
+}
+
+.picture-frame {
+    display: block;
+    position: relative;
+    width: 45vw;
+    height: 45vw;
+    max-width: 28vh;
+    max-height: 28vh;
+    margin-left: -22.5vw;
+    top: 2vh;
+    margin-left: 10%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.picture-frame img {
+    width: auto;
+    height: 100%;
+    margin-left: -17px;
+}
+
+.hello-wrapper {
+    position: absolute;
+    top: 30%;
+    left: -25%;
+    width: 150%;
+    height: 35px;
+    -webkit-transform: rotate(-25deg);
+    overflow: hidden;
+}
+
+.hello-text {
+    position: relative;
+    text-align: center;
+    letter-spacing: 4px;
+    left: -10px;
+    word-spacing: 4px;
+    font-family: 'LinedMid';
+    font-size: 200%;
+    color: rgb(80, 80, 80);
+}
+
+.name-wrapper {
+    position: absolute;
+    top: 35%;
+    left: -25%;
+    width: 150%;
+    height: 70px;
+    -webkit-transform: rotate(-25deg);
+    overflow: hidden;
+}
+
+.name-text {
+    -webkit-font-smoothing: auto;
+    -o-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    top: 40%;
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: 'LinedStrong';
+    font-size: 185%;
+    background: linear-gradient(to left, rgb(238, 238, 238), #ffb1c4, rgb(238, 238, 238));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: Animation 5s linear infinite;
+    -webkit-animation: Animation 5s linear infinite;
+}
+
+.resume-wrapper {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: -25%;
+    width: 150%;
+    height: 105px;
+    -webkit-transform: rotate(-25deg);
+    overflow: hidden;
+}
+
+.resume-text {
+    top: 60%;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-family: 'LinedMid';
+    font-size: 200%;
+    color: rgb(238, 238, 238);
+}
+
+.resume-text:hover {
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.quote-wrapper {
+    position: absolute;
+    display: block;
+    top: 72%;
+    width: 100%;
+    text-align: center;
+    color: #414141;
+    text-shadow: 1px 2px 2px rgb(204, 204, 204);
+}
+
+.nye-text {
+    font-family: 'PoppinsLight';
+    font-size: 80%;
+}
+
+.quote-text {
+    font-family: 'PoppinsLight';
+    font-size: 110%;
+    color: #414141;
+}
+
+.explore-wrapper {
+    top: 85%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.explore-text {
+    text-align: center;
+    font-family: 'LinedMid';
+    font-size: 220%;
+    background: linear-gradient(to left, #eedf5b, #6cd3da, #ae6cda, #eedf5b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: Animation 5s linear infinite;
+    -webkit-animation: Animation 5s linear infinite;
+}
+
+@keyframes Animation {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:200% 0%}    
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:200% 0%}
+}
+
+.abt-header-wrapper {
+    position: relative;
+    display: block;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.about-header {
+    font-size: 300%;
+}
+
+.about-text-wrapper {
+    font-family: 'PoppinsLight';
+    position: relative;
+    display: block;
+    top: 15%;
+    width: 90%;
+    left: 5%;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+    border-left: 3px solid rgb(224, 64, 99);
+    margin-left: -3px;
+}
+
+.about-text-wrapper p{
+    padding: 5px 10px 5px 10px;
+    font-size: 135%;
+    color: #414141;
+}
+
+.proj-header-wrapper {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    text-align: center;
+}
+
+.proj-header {
+    font-size: 300%;
+}
+
+.proj-cont {
+    height: 110vh;
+}
+
+.proj-wrapper {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    margin-left: 24px;
+    width: 85%;
+    height: 65%;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+}
+
+.proj-list {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-decoration: none;
+    float: left;
+    height: 100%;
+    overflow: visible;
+    list-style: none;
+    text-align: center;
+    background-color: #afafaf2d;
+    overflow: scroll;
+}
+
+.section {
+    padding-top: 5px;
+    background-color: rgb(90, 90, 90);
+    height: auto;
+    overflow: visible;
+    font-size: 0.95em;
+    padding-left: 2px; 
+    padding-right: 2px;
+}
+
+.section span {
+    font-size: 1em;
+    color: white;
+    font-family: 'LinedStrong';
+}
+
+.lst {
+    height: auto;
+    overflow: visible;
+    padding: 8px 5px 8px 5px;
+}
+
+.lst:hover {
+    background-color: #c0c0c0;
+}
+
+.proj-active {
+    border-right: 2px solid rgb(255, 178, 115);
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.proj-active:hover {
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.proj-list a {
+    position: relative;
+    font-family: 'PoppinsLight';
+    width: 100%;
+    font-size: .9em;
+    color: rgb(44, 44, 44);
+}
+
+.proj-disp-cont {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+}
+
+.showcased-disp {
+    opacity: 0;
+    display: none;
+}
+
+.show-active {
+    opacity: 1;
+    display: block;
+}
+
+.proj-head {
+    text-align: center; 
+    font-family: 'PoppinsLight'; 
+    font-size: 170%; 
+    color: rgb(60, 174, 219);
+}
+
+.proj-desc {
+    font-size: 95%; 
+    text-align: center;
+}
+
+.proj-det-cont {
+    position: relative;
+    left: 5%;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.proj-det-head {
+    font-family: 'LinedMid';
+    font-size: 125%;
+    margin-top: -5px;
+    border-bottom: 2px solid gray;
+    color: #ae6cda;
+}
+
+.skill-list-left {
+    list-style: none;
+    float: left;
+}
+
+.skill-list-left p{
+    font-family: 'LinedMid';
+    font-size: 110%;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.skill-list-right {
+    list-style: none;
+    float: right;
+}
+
+.skill-list-right p{
+    padding-right: 15px;
+    font-family: 'LinedMid';
+    font-size: 110%;
+    padding-top: 5px;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.proj-det-txt {
+    padding-right: 15px;
+    font-family: 'LinedMid';
+    font-size: 100%;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+.eaton-button {
+    background: rgb(61, 117, 236);
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 3;
+    border-radius: 3px;
+}
+
+.eaton-button span {
+    font-family: 'LinedStrong';
+    font-size: 100%;
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+
+.eaton-button:hover {
+    cursor: pointer;
+    background-color: rgb(53, 100, 201);;
+}
+
+.git-button {
+    background: rgb(42, 194, 80);
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 110px;
+    left: 50%;
+    margin-left: -55px;
+    z-index: 3;
+    border-radius: 3px;
+}
+
+.git-button:hover {
+    cursor: pointer;
+    background-color: rgb(34, 160, 66);
+}
+
+.git-button img {
+    width: 30px;
+    height: auto;
+    float: left;
+    padding: 5px 0px 0px 5px;
+}
+
+.git-button span {
+    font-family: 'LinedStrong';
+    font-size: 100%;
+    float: right;
+    padding: 7px 5px 0px 5px;
+    color: white;
+}
+
+.edu-cont {
+    height: 180vh;
+}
+
+.edu-header-wrapper {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 1.5%;
+    text-align: center;
+}
+
+.cornell-wrapper {
+    display: block;
+    position: relative;
+    top: 12%;
+    left: 5%;
+    margin-left: -5px;
+    width: 90%;
+    height: 41%;
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+    border-left: 5px solid rgb(65, 65, 65);
+}
+
+.pvphs-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 25vh;
+    left: 5%;
+    width: 90%;
+    height: 41%;
+    margin-left: -5px;
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+    border-left: 5px solid rgb(65, 65, 65);
+}
+
+.cornell-head {
+    font-family: 'LinedMid';
+    padding-left: 5px;
+    font-size: 140%;
+    float: left;
+    color: rgb(226, 41, 41);
+}
+
+.pvphs-head {
+    font-family: 'LinedMid';
+    padding-left: 5px;
+    font-size: 140%;
+    float: left;
+    color: rgb(226, 177, 41);
+}
+
+.gpa-head {
+    font-family: 'LinedMid';
+    padding-right: 5px;
+    font-size: 140%;
+    float: right;
+    color: rgb(65, 65, 65);
+}
+
+.school-txt-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.school-txt {
+    font-family: 'PoppinsLight';
+    color: rgb(65, 65, 65);
+    font-size: 90%;
+    padding-right: 5px;
+    padding-left: 25px;
+    padding-top: 5px;
+    text-align: justify;
+}
